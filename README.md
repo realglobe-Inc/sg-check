@@ -105,7 +105,7 @@ Available functions
 | Signature | Description |
 | ---- | ----------- |
 | `.hasBin(binName) -> Promise.<boolean>` | Check if a bin available |
-| `.hasVar() -> Promise.<boolean>` | Check if a variable available |
+| `.hasVar(varName) -> Promise.<boolean>` | Check if a variable available |
 
 
 <!-- Section from "doc/guides/03.Functions.md.hbs" End -->
