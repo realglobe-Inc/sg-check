@@ -29,6 +29,16 @@ describe('has-var', function () {
       assert.strictEqual(has, false)
     }
   }))
+
+  it('Try script injection', () => co(function * () {
+    let caught
+    try {
+      yield hasVar('it; process.exit(1)')
+    } catch (e) {
+      caught = e
+    }
+    assert.ok(caught)
+  }))
 })
 
 /* global describe, before, after, it */

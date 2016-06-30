@@ -10,7 +10,8 @@ var co = require('co');
 
 /** @lends hasVar */
 function hasVar(varName) {
-  varName = encodeURIComponent(varName); // Prevent injection
+  // Prevent injection
+  varName = encodeURIComponent(varName).replace(/[\(\)\.;\s\t]/g, '');
   return co(regeneratorRuntime.mark(function _callee() {
     var typeofVar;
     return regeneratorRuntime.wrap(function _callee$(_context) {
