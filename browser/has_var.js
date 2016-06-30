@@ -1,7 +1,7 @@
 /**
  * Check if a variable available
  * @function hasVar
- * @parma {string} varName - Name of variable
+ * @param {string} varName - Name of variable
  * @returns {Promise.<boolean>} - Result
  */
 'use strict';

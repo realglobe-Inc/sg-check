@@ -1,6 +1,6 @@
 {
   "name": "sg-check",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Checking utilify for SUGOS",
   "main": "lib",
   "browser": "browser",
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/realglobe-Inc/sg-check#readme",
   "dependencies": {
+    "apemanfs": "^1.0.5",
     "co": "^4.6.0",
     "hasbin": "^1.2.3"
   },
