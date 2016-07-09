@@ -1,6 +1,6 @@
 {
   "name": "sg-check",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Checking utilify for SUGOS",
   "main": "lib",
   "browser": "sims/browser",
