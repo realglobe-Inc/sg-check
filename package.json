@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/realglobe-Inc/sg-check#readme",
   "dependencies": {
-    "apemanfs": "^1.0.5",
+    "asfs": "^1.0.4",
     "co": "^4.6.0",
     "hasbin": "^1.2.3"
   },
@@ -37,7 +37,7 @@
     "ape-tasking": "^4.0.3",
     "ape-testing": "^4.0.0",
     "ape-tmpl": "^5.0.11",
-    "ape-updating": "^4.0.2",
+    "ape-updating": "*",
     "coz": "^6.0.3",
     "expandglob": "^3.0.2",
     "injectmock": "^2.0.0"
