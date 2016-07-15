@@ -28,6 +28,16 @@ describe('has-bin', function () {
       let has = yield hasBin('hogehoge')
       assert.strictEqual(has, false)
     }
+
+    {
+      let caught
+      try {
+        let has = yield hasBin.allOf([ 'hogehoge' ])
+      } catch (err) {
+        caught = err
+      }
+      assert.ok(!!caught)
+    }
   }))
 })
 

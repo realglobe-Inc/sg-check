@@ -53,6 +53,7 @@ Checking utilify for SUGOS
 <!-- Section from "doc/guides/01.Installation.md.hbs" Start -->
 
 <a name="section-doc-guides-01-installation-md"></a>
+
 Installation
 -----
 
@@ -66,6 +67,7 @@ $ npm install sg-check --save
 <!-- Section from "doc/guides/02.Usage.md.hbs" Start -->
 
 <a name="section-doc-guides-02-usage-md"></a>
+
 Usage
 ---------
 
@@ -97,6 +99,7 @@ co(function * () {
 <!-- Section from "doc/guides/03.Functions.md.hbs" Start -->
 
 <a name="section-doc-guides-03-functions-md"></a>
+
 Functions
 ---------
 
