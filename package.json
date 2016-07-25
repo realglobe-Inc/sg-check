@@ -28,18 +28,18 @@
     "hasbin": "^1.2.3"
   },
   "devDependencies": {
+    "ababel": "^1.0.19",
+    "ababel-es2015": "^1.0.2",
     "aglob": "^1.0.1",
-    "ape-compiling": "^5.0.0",
-    "ape-covering": "^3.0.3",
+    "amocha": "^1.0.8",
     "ape-doc": "^2.0.4",
     "ape-formatting": "^1.0.2",
-    "ape-releasing": "^4.0.1",
+    "ape-releasing": "^4.0.2",
     "ape-reporting": "^3.0.1",
-    "ape-tasking": "^4.0.3",
-    "ape-testing": "^4.0.1",
-    "ape-tmpl": "^5.0.13",
+    "ape-tasking": "^4.0.7",
+    "ape-tmpl": "^5.0.14",
     "ape-updating": "^4.0.4",
-    "coz": "^6.0.5",
+    "coz": "^6.0.14",
     "injectmock": "^2.0.0"
   },
   "engines": {
