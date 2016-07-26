@@ -3,7 +3,7 @@
   "version": "1.0.6",
   "description": "Checking utilify for SUGOS",
   "main": "lib",
-  "browser": "sims/browser",
+  "browser": "shim/browser",
   "scripts": {
     "test": "./ci/test.js",
     "prepublish": "./ci/build.js && ./ci/browser.js"
