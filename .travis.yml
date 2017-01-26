@@ -2,9 +2,9 @@ language: node_js
 node_js:
 - '6'
 before_install:
-- echo "registry = https://realglobe.artifactoryonline.com/realglobe/api/npm/npm-virtual" > .npmrc
-- curl -u${NPM_USER}:${NPM_PASSWORD} "https://realglobe.artifactoryonline.com/realglobe/api/npm/auth" >> .npmrc
-- cat .npmrc
+- gem install travis
+- npm i npm-cli-login -g
+- npm-cli-login -u "${NPM_USER}" -p "${NPM_PASSWORD}" -e "${NPM_EMAIL}"
 install:
 - npm install
 script:
@@ -13,3 +13,5 @@ script:
 after_success:
 - ./ci/travis/publish.js
 - ./ci/travis/push_sugos_index.js
+env:
+  secure: "aCgy44INwNxDRkJEcJeGdS4XJKc7n0FumQrkBeeNRSs6JJLtfF/X4Aa11pQTMo1fHrfoYZ4mDmO39vK6x4Ut62uhjy3s9ubNAftTVQfgKdlYgvpUvfTOoqhAAMX7dbALi5bkpFUouYgGMZjFxGsW2YoYlgK7afN8uT/WzEbXHdjfOFwupGyjLEv5Y4RiH1pITrzpDCV0A3Tdz6tJs4GYBMIpMi5Qp2ZRJSxeWhAf4GBIsybnKzNOnUjQP70DsBN6/JBCpcK50XtySnsP0rWH4ZV7wLuBNFiMF0C6a7GQa/IcdjnWixfJ2pmxQ0L3pgyhEqyQoEsZXFboYIX+iKoS9hU9OpVYcNm3qgcQZViAYIxIZlnzgxouYFY8M8ohcs/dpZBkg/vMFdmG1mN5jjyqa1oxD59ErXalNEWUdojx+5lN3EaYyDf8KyPSnzGEp+t9C23kNXaONjEh5N4rcimcvnlamzuKZ/zqRIj+IZJppNAu9EBxVsvo/j//pw/umZnC/utuJLeGLlSi9jD0PIiG3zLU2bjDlXfPPr5W1ydBy9zpOkejmSn9s/IoTN5QEeOQA9+D1dquCilcDNXLlwAyu/Tzm+llytHFZEJllFqoiSD+m+cu0kKTK3D0jLFT1WtEUzicvWB4IsVvqmJWurFqIb5dEYn4zOUwUaNSj9cjhxo="
