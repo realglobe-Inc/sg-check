@@ -1,12 +1,12 @@
 {
   "name": "sg-check",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "description": "Checking utilify for SUGOS",
   "main": "lib",
   "browser": "shim/browser",
   "scripts": {
-    "test": "./ci/test.js",
-    "prepublish": "./ci/build.js && ./ci/browser.js"
+    "test": "node ./ci/test.js",
+    "prepare": "node ./ci/build.js && node ./ci/shim.js"
   },
   "repository": "realglobe-Inc/sg-check",
   "keywords": [
@@ -17,7 +17,7 @@
     "email": "okunishitaka.com@gmail.com",
     "url": "http://okunishitaka.com"
   },
-  "license": "MIT",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/realglobe-Inc/sg-check/issues"
   },
@@ -35,18 +35,15 @@
     "ape-doc": "^2.0.4",
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.2",
-    "ape-reporting": "^3.0.1",
     "ape-tasking": "^4.0.7",
     "ape-tmpl": "^5.0.14",
     "ape-updating": "^4.0.4",
     "coz": "^6.0.14",
-    "injectmock": "^2.0.0"
+    "injectmock": "^2.0.0",
+    "sg-travis": "^1.1.33"
   },
   "engines": {
     "node": ">=6",
-    "npm": ">=3"
-  },
-  "publishConfig": {
-    "registry": "https://realglobe.artifactoryonline.com/realglobe/api/npm/npm-local"
+    "npm": ">=4"
   }
 }
