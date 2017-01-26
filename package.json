@@ -5,8 +5,8 @@
   "main": "lib",
   "browser": "shim/browser",
   "scripts": {
-    "test": "./ci/test.js",
-    "prepublish": "./ci/build.js && ./ci/browser.js"
+    "test": "node ./ci/test.js",
+    "prepare": "node ./ci/build.js && node ./ci/shim.js"
   },
   "repository": "realglobe-Inc/sg-check",
   "keywords": [
@@ -17,7 +17,7 @@
     "email": "okunishitaka.com@gmail.com",
     "url": "http://okunishitaka.com"
   },
-  "license": "MIT",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/realglobe-Inc/sg-check/issues"
   },
@@ -44,6 +44,6 @@
   },
   "engines": {
     "node": ">=6",
-    "npm": ">=3"
+    "npm": ">=4"
   }
 }
