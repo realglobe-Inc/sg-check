@@ -2,7 +2,6 @@ language: node_js
 node_js:
 - '6'
 before_install:
-- gem install travis
 - npm i npm-cli-login -g
 - npm-cli-login -u "${NPM_USER}" -p "${NPM_PASSWORD}" -e "${NPM_EMAIL}"
 install:
