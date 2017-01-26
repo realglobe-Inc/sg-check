@@ -45,8 +45,5 @@
   "engines": {
     "node": ">=6",
     "npm": ">=3"
-  },
-  "publishConfig": {
-    "registry": "https://realglobe.artifactoryonline.com/realglobe/api/npm/npm-local"
   }
 }
