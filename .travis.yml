@@ -3,6 +3,7 @@ node_js:
 - '6'
 before_install:
 - npm i npm-cli-login -g
+- echo "NPM_USER=#{NPM_USER}"
 - npm-cli-login -u "${NPM_USER}" -p "${NPM_PASSWORD}" -e "${NPM_EMAIL}"
 install:
 - npm install
