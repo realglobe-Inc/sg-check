@@ -134,9 +134,9 @@ Links
 ------
 
 + [SUGOS][sugos_url]
-+ [Realglobe][realglobe_url]
++ [Realglobe, Inc.][realglobe,_inc__url]
 
 [sugos_url]: https://github.com/realglobe-Inc/sugos
-[realglobe_url]: https://realglobe.jp/
+[realglobe,_inc__url]: http://realglobe.jp
 
 <!-- Links End -->
