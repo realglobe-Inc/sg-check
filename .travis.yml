@@ -8,6 +8,7 @@ before_install:
 install:
 - npm install
 script:
+- ./ci/shim.js
 - ./ci/build.js
 - ./ci/test.js
 after_success:
